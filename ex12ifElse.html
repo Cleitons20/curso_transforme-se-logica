@@ -1,0 +1,72 @@
+<meta charset="utf-8">
+
+<script>
+    var codigo = Number(prompt("Digite o código de seu cargo"));
+    var salario = Number(prompt("Digite seu salario"));
+
+    var aumento;
+    var novoSalario;
+
+    if (codigo == 1) {
+        document.write("cargo escriturario");
+        document.write("<hr>");
+
+        aumento = salario * (50 / 100);
+        novoSalario = salario + aumento
+        document.write("Você receberá um salário de: " + aumento)
+        document.write("<hr>");
+        document.write("Seu novo salario será de: " + novoSalario)
+        document.write("<hr>");
+    }
+
+    else if (codigo == 2) {
+        document.write("Secretario");
+        document.write("<hr>");
+
+        aumento = salario * (35 / 100);
+        novoSalario = salario + aumento
+        document.write("Você receberá um salário de: " + aumento)
+        document.write("<hr>");;
+        document.write("Seu novo salario será de: " + novoSalario)
+        document.write("<hr>");
+    }
+    else if (codigo == 3) {
+        document.write("Caixa");
+        document.write("<hr>");
+
+        aumento = salario * (20 / 100);
+        novoSalario = salario + aumento
+        document.write("Você receberá um salário de: " + aumento)
+        document.write("<hr>");
+        document.write("Seu novo salario será de: " + novoSalario)
+        document.write("<hr>");
+    }
+
+    else if (codigo == 4) {
+        document.write("Gerente");
+        document.write("<hr>");
+
+        aumento = salario * (10 / 100);
+        novoSalario = salario + aumento
+        document.write("Você receberá um salário de: " + aumento)
+        document.write("<hr>");
+        document.write("Seu novo salario será de: " + novoSalario)
+        document.write("<hr>");
+    }
+
+    else if (codigo == 5) {
+        document.write("Diretor");
+        document.write("<hr>");
+
+        aumento = salario;
+        novoSalario = salario + aumento
+        document.write("Você não receberá aumento: " + aumento)
+        document.write("<hr>");
+        document.write("Seu salario ficará de: " + salario)
+        document.write("<hr>");
+    }
+
+    else
+        alert("codigo invalido")
+
+</script>
